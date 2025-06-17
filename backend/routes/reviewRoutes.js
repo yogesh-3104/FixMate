@@ -1,6 +1,6 @@
 import express from "express";
 const router = express.Router();
-import {createReview, getReview,getProviderReviewAndRating, updateReview, deleteReview } from "../controllers/reviewController.js";
+import {createReview, getReview,getProviderReviewAndRating, updateReview, deleteReview } from "../Controllers/reviewController.js";
 import { authenticate,authorizeProvider } from "../middleware/authentication.js";
 
 router.post("/", authenticate, createReview);
